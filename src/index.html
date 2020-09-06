@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <title>HK Bookkeeping</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
     <link rel="stylesheet" href="styles/main.pcss">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" async></script>
 </head>
 <body>
 <div class="site">
-    <header class="header">
-        <img class="header__logo" src="/assets/logo.png" alt="HK Bookkeeping">
-        <div class="header__contact">
-            <a href="tel:07801803291">07801 803291</a>
-            <a href="mailto:helen@helenkempmail.co.uk">helen@helenkempmail.co.uk</a>
+    <nav class="site__nav">
+        <div class="site__logo-container">
+            <img class="site__logo" src="/assets/logo-light.svg" alt="HK Bookkeeping">
+            <div>Bookkeeping</div>
         </div>
-    </header>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#bookkeeping">Bookkeeping</a></li>
+            <li><a href="#payroll">Payroll</a></li>
+            <li><a href="#taxation">Taxation</a></li>
+        </ul>
+    </nav>
     <main>
-        <section id="about">
-            <include src="partials/about.html"></include>
-        </section>
-        <section id="bookkeeping">
-            <include src="partials/bookkeeping.html"></include>
-        </section>
-        <section id="payroll">
-            <include src="partials/payroll.html"></include>
-        </section>
-        <section id="taxation">
-            <include src="partials/taxation.html"></include>
-        </section>
+        <include src="partials/about.html"></include>
+        <include src="partials/bookkeeping.html"></include>
+        <include src="partials/payroll.html"></include>
+        <include src="partials/taxation.html"></include>
     </main>
+    <footer>
+        <a href="tel:07801803291">07801 803291</a>
+        <a href="mailto:helen@helenkempmail.co.uk">helen@helenkempmail.co.uk</a>
+    </footer>
 </div>
 </body>
 </html>
