@@ -1,11 +1,17 @@
 body {
     background: #fff;
-    color: #333;
+    color: #2D2D2D;
     margin: 0;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 1.125rem;
     font-weight: 300;
     line-height: 1.9rem;
+
+/*    @media (prefers-color-scheme: dark) {
+        background: #2D2D2D;
+        color: #fff;
+    }*/
+
 }
 
 h1, h2, h3, h4, h5,
@@ -38,6 +44,22 @@ strong {
         a {
             display: block;
         }
+    }
+}
+
+.photo {
+    width: 480px;
+    height: 480px;
+    margin-left: 50px;
+    display: flex;
+    shape-outside: circle(50%);
+    float: right;
+
+    img {
+        object-fit: cover;
+        height: auto;
+        width:100%;
+        border-radius: 50%;
     }
 
 }
