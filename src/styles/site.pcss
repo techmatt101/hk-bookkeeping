@@ -20,16 +20,16 @@ $bold: 400;
     @media (max-width: 800px) {
         flex-direction: column;
         justify-content: center;
-        animation: 1s fadeInUp;
+        animation: 1s fadeInUp ease-in-out;
 
         &__emblem {
-            max-width: 30vw;
+            height: 50%;
         }
 
         &__title {
             display: block;
             font-size: 7vw;
-            line-height: 10vw;
+            margin-top: 3vw;
         }
     }
 }
@@ -40,11 +40,12 @@ $bold: 400;
     &__header {
         position: relative;
         z-index: 50;
+        background: #fff;
 
         @media (min-width: 800px) {
             border-bottom: 1px solid #ddd;
-            margin-bottom: 50px;
             padding-top: 10px;
+            margin-bottom: 50px;
 
             .logo {
                 margin: 25px 0;
@@ -52,9 +53,11 @@ $bold: 400;
         }
 
         @media (max-width: 800px) {
-            height: 100vh;
+            height: calc(100vh - 50px);
+            min-height: 400px;
             display: flex;
             flex-direction: column;
+            padding-bottom: 50px;
 
             .logo {
                 min-height: 40vh;
@@ -146,7 +149,7 @@ $bold: 400;
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translate3d(0, 10%, 0);
+        transform: translate3d(0, 5%, 0);
     }
 
     to {
