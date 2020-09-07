@@ -5,33 +5,43 @@
     <title>HK Bookkeeping</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
-    <link rel="stylesheet" href="styles/main.pcss">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.pcss">
     <script src="scripts/main.js" async></script>
 </head>
 <body>
 <div class="site">
-    <nav class="site__nav">
-        <div class="site__logo-container">
-            <img class="site__logo" src="/assets/logo-light.svg" alt="HK Bookkeeping">
-            <div>Bookkeeping</div>
+    <header class="site__header container">
+        <div class="logo">
+            <img class="logo__emblem" src="/images/logo.svg" alt="HK Bookkeeping">
+            <span class="logo__title">Bookkeeping</span>
         </div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#bookkeeping">Bookkeeping</a></li>
-            <li><a href="#payroll">Payroll</a></li>
-            <li><a href="#taxation">Taxation</a></li>
-        </ul>
-    </nav>
-    <main>
+        <nav class="site__nav">
+            <ul>
+                <li class="nav__item"><a href="#about">About</a></li>
+                <li class="nav__item"><a href="#bookkeeping">Bookkeeping</a></li>
+                <li class="nav__item"><a href="#payroll">Payroll</a></li>
+                <li class="nav__item"><a href="#taxation">Taxation</a></li>
+                <li class="nav__item nav__item--highlight"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="scroll-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+    <main class="container">
         <include src="partials/about.html"></include>
         <include src="partials/bookkeeping.html"></include>
         <include src="partials/payroll.html"></include>
         <include src="partials/taxation.html"></include>
     </main>
-    <footer>
-        <a href="tel:07801803291">07801 803291</a>
-        <a href="mailto:helen@helenkempmail.co.uk">helen@helenkempmail.co.uk</a>
+    <footer class="site__footer" id="contact">
+        <div class="container">
+            <a href="tel:07801803291">07801 803291</a>
+            <a href="mailto:helen@helenkempmail.co.uk">helen@helenkempmail.co.uk</a>
+        </div>
     </footer>
 </div>
 </body>

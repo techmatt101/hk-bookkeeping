@@ -12,5 +12,8 @@
     "parcel-bundler": "^1.12.4",
     "posthtml-include": "^1.4.3",
     "precss": "^4.0.0"
+  },
+  "dependencies": {
+    "section": "^0.4.2"
   }
 }
