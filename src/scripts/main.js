@@ -1,6 +1,8 @@
 function smoothScrollLink(e) {
     e.preventDefault();
+    history.pushState({}, '', this.href);
     document.querySelector(this.getAttribute('href'))
+        .parentElement
         .scrollIntoView({
             behavior: 'smooth'
         });
