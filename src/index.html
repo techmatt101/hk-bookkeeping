@@ -2,10 +2,10 @@
 <html lang='en'>
 <head>
     <meta charset="UTF-8">
-    <title>HK Bookkeeping</title>
+    <title>HK Bookkeeping - Accounts, Payroll and Bookkeeping Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="HK Bookkeeping professional, friendly and personal bookkeeper based in Winslow, Buckinghamshire. Registered IAB Bookkeeper with over 20 years of experience specialising in Accounts and Payroll Services for the Self-Employed, Sole Trader, Partnership and Small Limited Company.">
-    <meta name="keywords" content="Bookkeeping, Payroll, Accountants, Taxation, IAB, Buckingham, Winslow, Milton Keynes">
+    <meta name="description" content="Buckinghamshire based IAB bookkeeper with over 20 years of experience in Accounts, Payroll and Taxation for Self-Employed, Sole Traders and Small Companies.">
+    <meta name="keywords" content="Bookkeeping, Payroll, Accountant, Taxation, Milton Keynes, Buckingham, Winslow, IAB, VAT, Tax">
 
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
@@ -17,8 +17,8 @@
     <header class="site__header container">
         <div class="logo">
             <img class="logo__emblem" src="/images/logo.svg" alt="HK Bookkeeping">
-            <span class="logo__title">Bookkeeping</span>
-            <a href="https://www.iab.org.uk/" class="logo__iab" target="_blank" rel="noreferrer noopener" aria-label="IAB Registered Bookkeeper">
+            <h1 class="logo__title">Bookkeeping</h1>
+            <a href="https://www.iab.org.uk/" class="logo__iab" target="_blank" rel="noreferrer noopener" aria-label="IAB Registered Bookkeeper" tabindex="-1">
                 <img src="/images/iab-logo.svg" alt="International Association of Bookkeepers Registered Bookkeeper" title="IAB Registered Bookkeeper">
             </a>
         </div>
@@ -32,7 +32,7 @@
             </ul>
         </nav>
     </header>
-    <button id="scroll-top" aria-label="Scroll to top">
+    <button id="scroll-top" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
             <polyline points="18 15 12 9 6 15"></polyline>
         </svg>
@@ -43,15 +43,15 @@
         <include src="partials/payroll.html"></include>
         <include src="partials/taxation.html"></include>
     </main>
-    <footer class="site__footer" id="contact">
+    <footer class="site__footer" aria-labelledby="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <div>
+            <h2 id="contact">Contact</h2>
+            <address class="site__footer__address">
                 <strong>Helen Kemp</strong><br>
                 <a href="mailto:helen@hkbookkeeping.co.uk">helen@hkbookkeeping.co.uk</a><br>
                 <a href="tel:07801803291">07801 803291</a><br>
                 <strong>Winslow, Buckingham MK18</strong>
-            </div>
+            </address>
             <a href="https://www.iab.org.uk/" class="site__footer__iab" target="_blank" rel="noreferrer noopener" aria-label="IAB Registered Bookkeeper">
                 <img src="/images/iab-logo.svg" alt="International Association of Bookkeepers Registered Bookkeeper" title="IAB Registered Bookkeeper">
             </a>
