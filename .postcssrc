@@ -1,6 +1,7 @@
 {
   "plugins": {
     "autoprefixer": true,
-    "precss": true
+    "postcss-nested": true,
+    "postcss-simple-vars": true
   }
 }
