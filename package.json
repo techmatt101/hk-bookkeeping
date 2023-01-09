@@ -8,10 +8,9 @@
         "build": "parcel build src/index.html --no-source-maps --public-url ."
     },
     "devDependencies": {
-        "autoprefixer": "^10.4.0",
         "parcel": "^2.0.1",
-        "postcss-nested": "^5.0.6",
-        "postcss-simple-vars": "^6.0.3",
+        "postcss-nested": "^6.0.0",
+        "postcss-simple-vars": "^7.0.1",
         "posthtml-include": "^1.4.3"
     }
 }
